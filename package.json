@@ -1,0 +1,26 @@
+{
+  "name": "LoveYourBigDog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "*7.1.1",
+    "gulp-clean": "*0.3.2",
+    "gulp-image": "*2.7.5",
+    "gulp-pug": "*3.2.0",
+    "jstransformer-markdown-it": "*2.0.0",
+    "pug": "*2.0.0-beta6",
+    "sixpack-client": "*2.1.0",
+    "underscore": "*1.8.3"
+  },
+  "devDependencies": {
+    "gulp": "*3.9.1",
+    "gulp-print": "*2.0.1",
+    "gulp-sass": "*3.0.0"
+  }
+}
