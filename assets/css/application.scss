@@ -5,6 +5,11 @@
 @import "focus-modal";
 @import "article";
 
+p.caption {
+    font-size: 12px;
+    max-width: 400px;
+}
+
 #application {
     @import "main-nav";
 

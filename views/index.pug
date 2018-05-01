@@ -4,26 +4,75 @@ include ./_mixins/landing-page
 block no_hero
 
 block content
-    .section.light-blue.small
+    .section.light-blue.tiny
         .small-container
             .full
-                p.text-center
-                    img.circle.outline(src="https://s3.amazonaws.com/spark-school/me_and_yogi.png" alt="Shane Burkhart with his dog, Yogi." style="width: 250px;")
+                .text-center
+                    img.circle.outline(src="https://s3.amazonaws.com/spark-school/me_and_yogi.png" alt="Shane Burkhart with his dog, Yogi." style="width: 200px;")
+                    h2.text-center.bold(style="margin-bottom: 5px;") Love Your Big Dog
+                    p(style="font-size: 16px; max-width: 400px; text-align: center; margin: 0 auto 30px;") Weekly tips and advice for big dog owners.
 
+    .section.small
+        .small-container
+            .full
                 h1.text-center Taming Yogi's separation anxiety
+
                 p Hey, I'm Shane! About a year ago, I adopted an 8 year old labradoodle named Yogi from a family that was moving and couldn't take him.
                 p I was told he had some separation anxiety, but I was okay with that since at most, I would only have to leave him by himself a day or two a week.
                 p.bold Unfortunately, he never wanted to be left alone.
-                p After about a month of training, Yogi now he enjoys being home alone (he gets all the pillows to himself).
-                p If your dog suffers from separation anxiety, enter your email below and I'll send you my free guide :)
+
+                div(style="margin-bottom: 10px; height: 350px;;position:relative;")
+                    iframe(src="https://player.vimeo.com/video/267334868?loop=1&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:350px;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen )
+                script(src="https://player.vimeo.com/api/player.js")
+                p(style="font-size: 14px; max-width: 400px; text-align: center; margin: 0 auto 30px; font-weight: bold;") This was recorded on my way home one evening.  The hole is from a time Yogi locked me out of my apartment and I had to break in. Yikes!
+
+                p Yogi would bark, howl, and scratch at the front door anytime I was away for more than a few minutes.
+
+                p In fact, you may have noticed the video was taken through a hole in my front door.  I had to break into my own apartment because Yogi locked me out while scratching at the door.
+
+                p Needless to say, Yogi had severe separation anxiety and since you're here, I'm guessing your dog does to some degree as well.
+
+    .section.light-blue.small
+        .small-container
+            .full
+                h2.bold.text-center Here's how to help your pup!
+
+                p The good news is, there are things you can do to help, but they aren't quick fixes. It took about two months of consistent training before Yogi was okay with being home by himself.
+
+                p I want to help you and your pup as well, so I put together a list of training resources I used.  These resources go over the two types of separation anxiety and give you step-by-step instructions for how to fix each.
+
+                p If you're interested, fill in your email below and I'll send them your way :)
 
         br
 
         .content-upgrade.signup-form
-            h3.bold.text-center Get your free separation anxiety training guide!
-            p Separation anxiety is just as stressful for the owner as it is for the dog. You don't want to be known as the apartment with the dog that just won't stop.
-            p
-                | If your dog suffers from separation anxiety,
-                b  click the link below
-                |  to get your free separation anxiety training guide.
-            a.button.block Get your free guide!
+            h3.bold.text-center Improve your dog's separation anxiety for FREE!
+            p Enter your email to receive the resources I used to tame Yogi's separation anxiety and additional dog related tips each week.  Let's help your pup feel relaxed when you are away!
+
+            // Begin MailChimp Signup Form
+            link(href='//cdn-images.mailchimp.com/embedcode/classic-10_7.css', rel='stylesheet', type='text/css')
+            style(type='text/css').
+              #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;padding: 0; }
+              #mc_embed_signup form{ padding: 0; }
+              input#mc-embedded-subscribe.button-override { display: block; width: 100%; color: #ffffff; background-color: #e7ce13; margin: 0 0 10px 0; padding: 16px 24px; border: none; border-radius: 3px; font-size: 16px; text-shadow: 0px 0px 1px #888888; cursor: pointer; }
+              #mc_embed_signup .mc-field-group { width: 100%; }
+              #mc_embed_signup .mc-field-group input { font-size: 14px; }
+              /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+              We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            #mc_embed_signup
+              form#mc-embedded-subscribe-form.validate(action='https://shaneburkhart.us15.list-manage.com/subscribe/post?u=8c6e4ce8404562ca882805491&id=7b5b2e7f40', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+                #mc_embed_signup_scroll
+                  .mc-field-group
+                    label(for='mce-EMAIL' style="font-weight: bold;") Email Address
+                    input#mce-EMAIL.required.email(type='email', value='', name='EMAIL', placeholder="example@domain.com")
+                  #mce-responses.clear
+                    #mce-error-response.response(style='display:none')
+                    #mce-success-response.response(style='display:none')
+                  // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                  div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                    input(type='text', name='b_8c6e4ce8404562ca882805491_7b5b2e7f40', tabindex='-1', value='')
+                  .clear
+                    input#mc-embedded-subscribe.button-override(type='submit', value='Send Me Resources', name='subscribe')
+            script(type='text/javascript', src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
+            script(type='text/javascript').
+              (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);
