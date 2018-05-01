@@ -27,6 +27,7 @@ gulp_build:
 gulp_watch:
 	docker run -v $(shell pwd)/views:/app/views -v $(shell pwd)/public:/app/public ${IMAGE_TAG} rerun --background --pattern '*.pug' rake gulp_build
 
-deploy:
-	ssh -A loveyourbigdogcom 'cd ~/LoveYourBigDog.com; git pull origin master; ./prod.sh'
+prod:
+	git pull origin master;
+	./prod.sh
 
