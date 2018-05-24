@@ -143,14 +143,12 @@ block content
                 span.bold  You'll also have lots of chances to win free treats and toys for your dog!
 
             form#email-form.ui.form(action="http://ref.loveyourbigdog.com/users/create", method="post")
-                .field
-                    input(type='text', name="user[email]", placeholder="Enter your email :)")
-
-                .text-center
-                    input.g-recaptcha.ui.large.yellow.button(
+                .form-wrap
+                    input.email(type='text', name="user[email]", placeholder="Enter your email :)")
+                    input.g-recaptcha.submit(
                         name="commit"
                         type="submit"
-                        value="Sign me up!"
+                        value="Let's go!"
                         data-sitekey="6LcsSlsUAAAAAC07KUDKpdwqa42lig6dYuvPHAgN"
                         data-callback="onSubmit")
 
