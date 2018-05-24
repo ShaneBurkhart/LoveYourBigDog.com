@@ -7,3 +7,11 @@ services:
         volumes:
             - ./nginx.dev.conf:/etc/nginx/nginx.conf
             - ./public:/public
+    builder:
+        image: shaneburkhart/loveyourbigdog.com
+        volumes:
+            - ./views:/app/views
+            - ./public:/app/public
+            - ./assets:/app/assets
+            - ./Rakefile:/app/Rakefile
+        command: "rerun --background --pattern '*.{pug,scss}' rake gulp_build"

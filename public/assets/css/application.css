@@ -8,7 +8,6 @@
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .fa {
   display: inline-block;
   font-family: FontAwesome;
@@ -85,31 +84,26 @@
     -moz-transform: rotate(0deg); }
   100% {
     -moz-transform: rotate(359deg); } }
-
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg); }
   100% {
     -webkit-transform: rotate(359deg); } }
-
 @-o-keyframes spin {
   0% {
     -o-transform: rotate(0deg); }
   100% {
     -o-transform: rotate(359deg); } }
-
 @-ms-keyframes spin {
   0% {
     -ms-transform: rotate(0deg); }
   100% {
     -ms-transform: rotate(359deg); } }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg); }
   100% {
     transform: rotate(359deg); } }
-
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
@@ -1646,10 +1640,8 @@ a, a:hover {
 
 h1.bold, h1 .bold, h1 b, h2.bold, h2 .bold, h2 b, h3.bold, h3 .bold, h3 b, h4.bold, h4 .bold, h4 b, h5.bold, h5 .bold, h5 b, h6.bold, h6 .bold, h6 b, p.bold, p .bold, p b, span.bold, span .bold, span b, a.bold, a .bold, a b {
   font-weight: 700 !important; }
-
 h1.light, h1 .light, h2.light, h2 .light, h3.light, h3 .light, h4.light, h4 .light, h5.light, h5 .light, h6.light, h6 .light, p.light, p .light, span.light, span .light, a.light, a .light {
   font-weight: 300 !important; }
-
 h1.normal, h1 .normal, h2.normal, h2 .normal, h3.normal, h3 .normal, h4.normal, h4 .normal, h5.normal, h5 .normal, h6.normal, h6 .normal, p.normal, p .normal, span.normal, span .normal, a.normal, a .normal {
   font-weight: 400 !important; }
 
@@ -1806,6 +1798,15 @@ ul {
 .text-center {
   text-align: center; }
 
+.text-right {
+  text-align: center; }
+
+.text-left {
+  text-align: center; }
+
+.inline-block {
+  display: inline-block; }
+
 .pull-right {
   float: right; }
 
@@ -1824,11 +1825,9 @@ ul {
 @media only screen and (max-width: 750px) {
   .tiny-container, .small-container, .container {
     width: 95%; } }
-
 @media only screen and (max-width: 330px) {
   #annual-revenue-form {
     width: 100%; } }
-
 #landing-page #main-nav {
   float: right; }
   #landing-page #main-nav form {
@@ -1866,27 +1865,47 @@ ul {
     font-size: 14px; }
     #landing-page #main-nav .button:hover {
       color: #ffffff; }
-
+#landing-page h2 {
+  color: #002A3D;
+  padding-top: 35px;
+  font-weight: bold;
+  page-break-before: always; }
+#landing-page h3 {
+  color: #002A3D;
+  font-weight: bold; }
+#landing-page h4 {
+  color: #002A3D;
+  font-weight: bold; }
 #landing-page.no-header {
   padding-top: 0px; }
-
 #landing-page .container {
   width: 900px; }
-
 #landing-page .small-container {
   width: 700px; }
-
 #landing-page .tiny-container {
   width: 500px; }
-
+#landing-page .header {
+  position: relative;
+  text-align: center; }
+  #landing-page .header > * {
+    display: inline-block;
+    vertical-align: middle; }
+  #landing-page .header h2 {
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 24px;
+    padding-top: 0; }
+  #landing-page .header img {
+    width: 70px; }
 #landing-page .content-upgrade {
-  width: 500px;
+  width: 450px;
   margin: 0px auto;
   padding: 10px 0px;
   border-radius: 3px; }
   #landing-page .content-upgrade.light-gray {
     background-color: #f6f6f6; }
-
+  #landing-page .content-upgrade p {
+    font-size: 16px !important; }
 #landing-page .hero {
   position: relative;
   height: 350px; }
@@ -1931,7 +1950,6 @@ ul {
       width: 75%;
       margin-left: auto;
       margin-right: auto; }
-
 #landing-page .section {
   padding: 80px 0px;
   border-bottom: 1px solid #eaeaea; }
@@ -2031,7 +2049,6 @@ ul {
         content: none; }
     #landing-page .section.quote .name {
       color: #777777; }
-
 #landing-page .signup-form {
   color: #292929;
   background-color: #ffffff;
@@ -2047,7 +2064,6 @@ ul {
     width: 100%;
     display: block;
     margin-bottom: 0px; }
-
 #landing-page #section-clock {
   margin-bottom: 0px; }
   #landing-page #section-clock > div {
@@ -2062,7 +2078,6 @@ ul {
       display: block; }
     #landing-page #section-clock > div span {
       font-size: 32px; }
-
 #landing-page #box-clock {
   margin-bottom: 15px; }
   #landing-page #box-clock > div {
@@ -2077,7 +2092,6 @@ ul {
       font-weight: bold; }
     #landing-page #box-clock > div .smalltext {
       font-size: 14px; }
-
 @media only screen and (max-width: 850px) {
   #landing-page .hero {
     height: 400px; }
@@ -2089,7 +2103,6 @@ ul {
       display: block !important;
       width: 100% !important;
       margin-bottom: 25px; } }
-
 @media only screen and (max-width: 500px) {
   #landing-page .hero {
     height: 500px; }
@@ -2097,7 +2110,6 @@ ul {
       width: 100%; }
   #landing-page .content-upgrade {
     width: 100%; } }
-
 @media only screen and (max-width: 350px) {
   #landing-page .hero {
     height: 550px; } }
@@ -2264,6 +2276,10 @@ ul {
     #article #main-nav {
       width: 30%; } }
 
+p.caption {
+  font-size: 12px;
+  max-width: 400px; }
+
 #application #main-nav {
   float: right; }
   #application #main-nav form {
@@ -2301,7 +2317,6 @@ ul {
     font-size: 14px; }
     #application #main-nav .button:hover {
       color: #ffffff; }
-
 #application .hero {
   background-color: #f7f7f7;
   padding: 35px 0px 25px;
@@ -2312,7 +2327,6 @@ ul {
   #application .hero p {
     color: #555555;
     font-size: 14px; }
-
 #application .course-listing {
   padding: 20px 0px;
   border-bottom: 1px solid #eeeeee; }
@@ -2332,3 +2346,5 @@ ul {
     font-size: 14px; }
     #application .course-listing ul li {
       margin-bottom: 10px; }
+
+/*# sourceMappingURL=application.css.map */

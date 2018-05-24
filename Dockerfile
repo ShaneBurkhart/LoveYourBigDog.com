@@ -15,6 +15,6 @@ WORKDIR /app
 ADD Gemfile /app/Gemfile
 RUN bundle install
 
-ADD . /app/
+ADD Rakefile /app/Rakefile
 
 CMD ["rake", "gulp_build"]
