@@ -20,10 +20,6 @@ block content
                 p I was told he had some separation anxiety, but I was okay with that since at most, I would only have to leave him by himself a day or two a week.
                 p.bold Unfortunately, he never wanted to be left alone.
 
-                div(style="margin-bottom: 10px; height: 350px;;position:relative;")
-                    iframe(src="https://player.vimeo.com/video/267334868?loop=1&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:350px;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen )
-                script(src="https://player.vimeo.com/api/player.js")
-                p(style="font-size: 14px; max-width: 400px; text-align: center; margin: 0 auto 30px; font-weight: bold;") This was recorded on my way home one evening.  The hole is from a time Yogi locked me out of my apartment and I had to break in. Yikes!
 
                 p Yogi would bark, howl, and scratch at the front door anytime I was away for more than a few minutes.
 
@@ -146,30 +142,19 @@ block content
                 | Each week I'll send you an email or two with training guides, useful dog products or maybe just a funny picture.
                 span.bold  You'll also have lots of chances to win free treats and toys for your dog!
 
-            // Begin MailChimp Signup Form
-            link(href='//cdn-images.mailchimp.com/embedcode/classic-10_7.css', rel='stylesheet', type='text/css')
-            style(type='text/css').
-              #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;padding: 0; }
-              #mc_embed_signup form{ padding: 0; }
-              input#mc-embedded-subscribe.button-override { display: block; width: 100%; color: #ffffff; background-color: #e7ce13; margin: 0 0 10px 0; padding: 16px 24px; border: none; border-radius: 3px; font-size: 16px; text-shadow: 0px 0px 1px #888888; cursor: pointer; }
-              #mc_embed_signup .mc-field-group { width: 100%; }
-              #mc_embed_signup .mc-field-group input { font-size: 14px; }
-              /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-              We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            #mc_embed_signup
-              form#mc-embedded-subscribe-form.validate(action='https://loveyourbigdog.us18.list-manage.com/subscribe/post?u=662910fd249808f04d1438ae2&id=155d57841c', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
-                #mc_embed_signup_scroll
-                  .mc-field-group
-                    label(for='mce-EMAIL' style="font-weight: bold;") Email Address
-                    input#mce-EMAIL.required.email(type='email', value='', name='EMAIL', placeholder="example@domain.com")
-                  #mce-responses.clear
-                    #mce-error-response.response(style='display:none')
-                    #mce-success-response.response(style='display:none')
-                  // real people should not fill this in and expect good things - do not remove this or risk form bot signups
-                  div(style='position: absolute; left: -5000px;', aria-hidden='true')
-                    input(type='text', name='b_8c6e4ce8404562ca882805491_7b5b2e7f40', tabindex='-1', value='')
-                  .clear
-                    input#mc-embedded-subscribe.button-override(type='submit', value='Sign me up!', name='subscribe')
-            script(type='text/javascript', src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
-            script(type='text/javascript').
-              (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);
+            form#email-form.ui.form(action="http://ref.loveyourbigdog.com/users/create", method="post")
+                .field
+                    input(type='text', name="user[email]", placeholder="Enter your email :)")
+
+                .text-center
+                    input.g-recaptcha.ui.large.yellow.button(
+                        name="commit"
+                        type="submit"
+                        value="Sign me up!"
+                        data-sitekey="6LcsSlsUAAAAAC07KUDKpdwqa42lig6dYuvPHAgN"
+                        data-callback="onSubmit")
+
+                script.
+                    function onSubmit(token) {
+                        document.getElementById("email-form").submit();
+                    }

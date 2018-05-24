@@ -61,6 +61,7 @@
         margin: 0px auto;
         padding: 10px 0px;
         border-radius: 3px;
+        position: relative;
 
         &.light-gray {
             background-color: #f6f6f6;
@@ -330,8 +331,9 @@
 
         button {
             width: 100%;
+            max-width: 200px;
             display: block;
-            margin-bottom: 0px;
+            margin: 0 auto;
         }
     }
 
@@ -416,6 +418,16 @@
     }
 
     @media only screen and (max-width : 350px) {
+        .header {
+            & > * {
+                display: block;
+            }
+
+            img {
+                margin: 0 auto;
+            }
+        }
+
         .hero {
             height: 550px;
         }

@@ -13,6 +13,7 @@ body {
     min-height: 100%;
     padding: 50px 0px 0px;
     box-sizing: border-box;
+    min-width: 0;
 }
 
 *, *:before, *:after {
@@ -40,6 +41,10 @@ iframe.hidden {
     padding: 0px;
     margin: 0px;
     line-height: 0;
+}
+
+.grecaptcha-badge {
+    display: none !important;
 }
 
 #site-logo {

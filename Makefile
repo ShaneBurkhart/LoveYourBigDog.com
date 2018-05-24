@@ -21,7 +21,13 @@ ps:
 c:
 	docker-compose -f docker-compose.dev.yml run builder /bin/bash
 
+ssh_prod:
+	ssh -A ubuntu@loveyourbigdog.com
+
 prod:
 	git pull origin master;
 	./prod.sh
+
+deploy_prod:
+	ssh -A ubuntu@loveyourbigdog.com "cd ~/LoveYourBigDog.com; make prod"
 
