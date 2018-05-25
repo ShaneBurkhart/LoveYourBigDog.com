@@ -12,7 +12,7 @@ meta(name="theme-color" content="#ffffff")
 block variables
 
 - var pageTitle = (title || 'Taming Yogi\'s Separation Anxiety') + ' - LoveYourBigDog.com';
-- var pageURL = 'http://loveyourbigdog.com' + currentPath;
+- var pageURL = 'http://loveyourbigdog.com' + (currentPath || "");
 - var googleDesc = googleDesc || description;
 - var fbDesc = fbDesc || description;
 - var fbImage = fbImage || '';

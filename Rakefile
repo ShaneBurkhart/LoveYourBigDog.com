@@ -8,4 +8,5 @@ task :gulp_build do
   end
 
   `sass /app/assets/css/application.scss /app/public/assets/css/application.css`
+  `cp /app/assets/images/* /app/public/assets/images/.`
 end
